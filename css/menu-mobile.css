@@ -1,0 +1,76 @@
+[data-menu="button"] {
+  display: none;
+  background: #222;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+.fa-bars {
+  transition: 0.35s ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .js [data-menu="button"] {
+    display: block;
+    text-align: center;
+    transition: all 0.5s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: 10px;
+  }
+  .js [data-menu="button"]:hover .fa-bars {
+    transform: rotate(90deg);
+  }
+
+  /*--elemento a ser mostrado pelo hover--*/
+  [data-menu="button"]:after {
+    content: "Menu";
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    position: absolute;
+    opacity: 0;
+    top: 7.5px;
+    right: -10px;
+    transition: 0.5s;
+  }
+  /*-- redução de tamanho no button pelo hover--*/
+  [data-menu="button"]:hover {
+    padding-right: 65px;
+    padding-left: 18px;
+    background: #222;
+  }
+  [data-menu="button"]:hover:after {
+    opacity: 1;
+    right: 12px;
+  }
+
+  .js [data-menu="list"] {
+    display: none;
+    position: absolute;
+    background-color: #fb5;
+    width: 160px;
+    z-index: 200;
+    padding: 10px 0 20px 0;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+  }
+  .js [data-menu="list"].active{
+    display: block;
+    animation: show-right .3s forwards;
+  }
+  .js [data-menu="list"].active:after{
+    transition: 0.5s ease-in-out;
+    animation: show-right .3s backwards;
+  }
+  .js .dropdown-menu {
+    position: static;
+    border: none;
+    transition: 0.5s ease-in-out;
+  }
+}
