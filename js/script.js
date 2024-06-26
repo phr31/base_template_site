@@ -6,7 +6,7 @@ import Tooltip from "./modules/tooltip.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import AnimacaoScroll from "./modules/animacao-scroll.js";
-import DropdownMenu from "./modules/dropdown-menu.js";
+//import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import { SlideNav } from "./modules/slide.js";
@@ -33,13 +33,13 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-fetchAnimais("./animaisapi.json", ".numeros-grid");
+//fetchAnimais("./animaisapi.json", ".numeros-grid");
 
 const animacaoScroll = new AnimacaoScroll('[data-anime="scroll"]');
 animacaoScroll.init();
 
-const dropdownMenu = new DropdownMenu("[data-dropdown]");
-dropdownMenu.init();
+//const dropdownMenu = new DropdownMenu("[data-dropdown]");
+//dropdownMenu.init();
 
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
@@ -47,9 +47,9 @@ menuMobile.init();
 const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();
 
-fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
+//fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
-const slide = new SlideNav(".slide", ".slide-wrapper");
-slide.init();
-slide.addArrow(".prev", ".next");
-slide.addControl('.custom-controls');
+//const slide = new SlideNav(".slide", ".slide-wrapper");
+//slide.init();
+//slide.addArrow(".prev", ".next");
+//slide.addControl('.custom-controls');
