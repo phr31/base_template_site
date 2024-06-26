@@ -5,3 +5,20 @@
 @import "menu-mobile.css";
 @import "numeros.css";
 @import "slide.css";
+@import "slicknav.min.css";
+@import "slicknav-config.css";
+@import "btn-whats.css";
+
+:root {
+  --main: #fb5;
+  --secondary: #244358;
+  --grey: #696969;
+  --black: #222;
+  --white: #fff;
+  --transition: 0.35s ease-in-out;
+  --bradius: 6px;
+  --bradius-md: 12px;
+  --bradius-lg: 35px;
+  --bradius-xg: 50px;
+  --bradius-100: 100%;
+}

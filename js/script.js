@@ -41,8 +41,8 @@ animacaoScroll.init();
 //const dropdownMenu = new DropdownMenu("[data-dropdown]");
 //dropdownMenu.init();
 
-const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
-menuMobile.init();
+//const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+//menuMobile.init();
 
 const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();

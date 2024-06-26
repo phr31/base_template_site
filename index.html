@@ -9,10 +9,17 @@
   <title>Base Template</title>
 
   <!-- Inserir a fonte a ser usada aqui -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/72def27725.js" crossorigin="anonymous"></script>
 
-
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script type="module" src="js/modules/jquery.slicknav.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
   <script>
@@ -21,31 +28,34 @@
 </head>
 
 <body>
-  <header class="">
-    <nav class="menu" data-menu="suave">
-      <button data-menu="button" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
-      <ul data-menu="list" id="menu">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li data-dropdown>
-          <a title="Sobre" href="sobre.html">Sobre</a>
-          <ul class="dropdown-menu">
-            <li><a title="" href="empresa.html">A Empresa</a></li>
-            <li><a title="" href="equipe.html">Equipe</a></li>
-            <li><a title="" href="socios.html">Sócios</a></li>
-            <li><a title="" href="investidores.html">Investidores</a></li>
-          </ul>
-        </li>
-        <li><a title="" href="#faq">Faq</a></li>
-        <li><a title="" href="#contato">Contato</a></li>
-        <li><a data-modal="abrir" title="Login" href="login.html">Login <i class="fa-solid fa-chevron-right"></i></a>
-        </li>
-      </ul>
-    </nav>
+  <header class="container">
+    <ul class="main-menu" id="menu">
+      <li><a href="index.html" title="Home">Home</a></li>
+      <li data-dropdown>
+        <a title="Sobre" href="sobre.html">Sobre</a>
+        <ul class="dropdown-menu">
+          <li><a title="" href="empresa.html">A Empresa</a></li>
+          <li><a title="" href="equipe.html">Equipe</a></li>
+          <li><a title="" href="socios.html">Sócios</a></li>
+          <li><a title="" href="investidores.html">Investidores</a></li>
+        </ul>
+      </li>
+      <li><a title="" href="#faq">Faq</a></li>
+      <li><a title="" href="#contato">Contato</a></li>
+      <li><a data-modal="abrir" title="Login" href="login.html">Login <i class="fa-solid fa-chevron-right"></i></a>
+      </li>
+    </ul>
+
   </header>
 
   <main class="">
   </main>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <div id="btn-whatsapp">
+    <a href="" title="WhatsApp" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+  </div>
   <footer class=""></footer>
 
   <section class="modal-container " data-modal="container">
@@ -60,10 +70,15 @@
       </form>
     </div>
   </section>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
-  <script type="module" src="js/modules/jquery.slicknav.min.js"></script>
+
   <script type="module" src="js/script.js"></script>
+  <script>
+    $(function () {
+      $('#menu').slicknav({
+        label: '',
+      });
+    });
+  </script>
 </body>
 
 </html>

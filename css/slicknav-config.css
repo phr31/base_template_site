@@ -1,0 +1,54 @@
+.slicknav_menu {
+  background: var(--main);
+}
+.slicknav_menu .slicknav_btn {
+  display: block;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  padding: 15px 20px;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #fff;
+}
+.slicknav_menu .slicknav_btn:hover .slicknav_icon {
+  transform: rotate(90deg);
+  transition: 0.35s ease-in-out;
+}
+
+/*--elemento a ser mostrado pelo hover--*/
+.slicknav_menu .slicknav_btn:after {
+  content: "Menu";
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  left: 25px;
+  transition: 0.5s all;
+}
+/*-- redução de tamanho no button pelo hover--*/
+.slicknav_btn:hover {
+  padding-right: 18px;
+  padding-left: 65px;
+  background: #222;
+}
+.slicknav_btn:hover:after {
+  opacity: 1;
+  left: 12px;
+}
+
+@media screen and (min-width: 701px) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-menu {
+    display: none;
+  }
+}

@@ -10,7 +10,10 @@ dl {
   margin: 0px;
   padding: 0px;
 }
-
+.container {
+  width: min(100% - 1rem, 69rem);
+  margin-inline: auto;
+}
 img {
   display: block;
   max-width: 100%;
@@ -31,20 +34,16 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
-.menu {
-  grid-column: 3 / 5;
+.main-menu {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: #fb5;
-}
-
-.menu ul {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
 }
 
-.menu li a {
+.main-menu li a {
   display: block;
   padding: 10px;
   margin-right: 10px;

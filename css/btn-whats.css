@@ -1,0 +1,31 @@
+
+/*botão whats*/
+
+#btn-whatsapp a {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: inline-block;
+  color: var(--white);
+  background: #25D366;
+  color: #fff;
+  border-radius: 100%;
+  padding: 10px 18px;
+  box-shadow: 0 0 0 0 #42db87;
+  -webkit-animation: pulsing 1.25s infinite alternate-reverse;
+  -moz-animation: pulsing 1.25s infinite alternate-reverse;
+  -ms-animation: pulsing 1.25s infinite alternate-reverse;
+  animation: pulsing 1.25s infinite alternate-reverse;
+  font-size: 3rem;
+}
+
+@keyframes pulsing {
+  from{
+      box-shadow: 0 0 0 0 #42db87;
+      transform: scale(1);
+  }
+  to{
+      box-shadow: 0 0 0 30px rgb(232 76 61 / 0%);
+      transform: scale(1.1);
+  }
+}
