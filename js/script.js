@@ -7,9 +7,10 @@ import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import AnimacaoScroll from "./modules/animacao-scroll.js";
 //import DropdownMenu from "./modules/dropdown-menu.js";
-import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import { SlideNav } from "./modules/slide.js";
+import menuScroll from "./modules/menu-scroll.js";
+import slicknavConfig from "./modules/slicknav-config.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -53,3 +54,6 @@ funcionamento.init();
 //slide.init();
 //slide.addArrow(".prev", ".next");
 //slide.addControl('.custom-controls');
+
+menuScroll();
+slicknavConfig();

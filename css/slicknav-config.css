@@ -1,5 +1,12 @@
 .slicknav_menu {
   background: var(--main);
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+.slicknav_menu .logo {
+  padding: 1rem;
+  float: left;
 }
 .slicknav_menu .slicknav_btn {
   display: block;
